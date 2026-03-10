@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url('../vendor/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Bold.otf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+
+.item-card{
+    display:flex;
+    justify-content:center;
+    position:relative;
+    width:323px;
+}
+
+.item-card__description {
+    visibility: hidden;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.item-card__image{
+    border-radius: 5%;
+    border-style: solid;
+    height:328px;
+    width:328px;
+    color:grey;
+    
+}  
+
+
+
+.item-card__name{
+    position:absolute;
+    background:#ffffff;
+    text-align:center;
+    width:73px;
+    height:24px;
+    color:grey;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    border-radius:4px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    top:16px;
+    left:90px;
+    margin:0; 
+}

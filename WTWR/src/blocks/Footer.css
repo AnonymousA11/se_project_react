@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("../vendor/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Bold.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.footer__year{
+    margin-left: 20px;
+}
+
