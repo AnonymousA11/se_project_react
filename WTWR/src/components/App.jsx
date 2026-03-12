@@ -8,9 +8,8 @@ import Main from "../components/Main";
 import Footer from "../components/Footer";
 import ModalWithForm from "../components/ModalWithForm";
 import ItemModal from "../components/ItemModal";
-import { defaultClothingItems } from "../utils/clothingItems.js";
 import { getWeather, filterWeatherData } from "../utils/weatherApi";
-import { coordinates, APIkey } from "../utils/clothingItems.js";
+import { coordinates, apiKey } from "../utils/clothingItems.js";
 
 function App() {
   const [weatherData, setWeatherData] = useState({
@@ -34,7 +33,7 @@ function App() {
   };
 
   useEffect(() => {
-    getWeather(coordinates, APIkey)
+    getWeather(coordinates, apiKey)
       .then((data) => {
         const filteredData = filterWeatherData(data);
         setWeatherData(filteredData);
@@ -56,17 +55,7 @@ function App() {
         activeModal={activeModal}
         handleCloseClick={handleCloseClick}
       >
-        <button
-          onClick={handleCloseClick}
-          className="modal__close-btn"
-          type="button"
-        >
-          <img
-            className="modal__close-icon"
-            src="/src/images/modal__close-btn.png"
-            alt="Close"
-          />
-        </button>
+        
 
         <label htmlFor="name" className="modal__label">
           Name
@@ -84,7 +73,7 @@ function App() {
             className="modal__input"
             type="text"
             name="link"
-            id="Image Url"
+            id="link"
             placeholder="Image URL"
           />
         </label>
@@ -103,7 +92,7 @@ function App() {
           <br />
 
           <input
-            id="hot"
+            id="warm"
             className="modal__radio"
             type="radio"
             name="weather"

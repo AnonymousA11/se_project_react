@@ -1,26 +1,38 @@
-import '../blocks/ModalWithForm.css';
+import "../blocks/ModalWithForm.css";
+import closeIcon from "/src/images/modal__close-btn.png";
 
-
-function ModalWithForm({children, buttonText, title, activeModal, handleCloseClick}) {
-    return (
-    <div className={`modal ${activeModal === "add_garment" && "modal__opened" }`}>
-        <div className="modal__content">
+function ModalWithForm({
+  children,
+  buttonText,
+  title,
+  activeModal,
+  handleCloseClick,
+}) {
+  return (
+    <div
+      name="add_garment"
+      className={`modal ${activeModal === "add_garment" && "modal__opened"}`}
+    >
+      <div className="modal__content">
         <h2 className="modal__title">{title}</h2>
-        <button onClick={handleCloseClick} className="modal__close-btn" type="button"></button>
+        <button
+          onClick={handleCloseClick}
+          className="modal__close-btn"
+          type="button"
+        >
+          {" "}
+          <img src={closeIcon}></img>
+        </button>
         <form className="modal__form">
-        {children}
+          {children}
 
-        <button className="modal__submit-button" type="submit">{buttonText}</button>
-        
-
+          <button className="modal__submit-button" type="submit">
+            {buttonText}
+          </button>
         </form>
-        </div>
+      </div>
     </div>
-
-
-    );
-
+  );
 }
-
 
 export default ModalWithForm;

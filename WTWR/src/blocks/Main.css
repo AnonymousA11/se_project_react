@@ -4,10 +4,8 @@
   margin: 0 auto;
 }
 
-
-
 .cards__List {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -15,7 +13,3 @@
   gap: 21px;
   justify-content: center;
 }
-
-
-
-

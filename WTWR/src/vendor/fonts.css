@@ -6,12 +6,4 @@
   font-style: normal;
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.footer__year {
-  margin-left: 20px;
-}
