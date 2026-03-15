@@ -11,6 +11,7 @@ import ItemModal from "../components/ItemModal";
 import { defaultClothingItems } from "../utils/clothingItems.js";
 import { getWeather, filterWeatherData } from "../utils/weatherApi";
 import { coordinates, APIkey } from "../utils/clothingItems.js";
+import closeIcon from "/src/images/modal__close-btn.png";
 
 function App() {
   const [weatherData, setWeatherData] = useState({
@@ -66,6 +67,7 @@ function App() {
             src="/src/images/modal__close-btn.png"
             alt="Close"
           />
+          
         </button>
 
         <label htmlFor="name" className="modal__label">
@@ -84,7 +86,7 @@ function App() {
             className="modal__input"
             type="text"
             name="link"
-            id="Image Url"
+            id="link"
             placeholder="Image URL"
           />
         </label>
@@ -103,7 +105,7 @@ function App() {
           <br />
 
           <input
-            id="hot"
+            id="warm"
             className="modal__radio"
             type="radio"
             name="weather"
