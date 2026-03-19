@@ -6,4 +6,10 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("../vendor/fonts/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Medium.otf");
+  font-weight: 700;
+  font-style:normal;
+}
 

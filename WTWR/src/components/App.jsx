@@ -10,7 +10,7 @@ import ModalWithForm from "../components/ModalWithForm";
 import ItemModal from "../components/ItemModal";
 import { getWeather, filterWeatherData } from "../utils/weatherApi";
 import { coordinates, apiKey } from "../utils/clothingItems.js";
-import closeIcon from '/src/images/modal__close-btn.png'
+import closeIcon from "/src/images/modal__close-btn.png";
 
 function App() {
   const [weatherData, setWeatherData] = useState({
@@ -56,6 +56,7 @@ function App() {
             title="New garment"
             activeModal={activeModal}
             handleCloseClick={handleCloseClick}
+            isOpen={activeModal === "add_garment"}
           >
             <button
               onClick={handleCloseClick}

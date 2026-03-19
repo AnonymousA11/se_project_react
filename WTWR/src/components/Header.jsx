@@ -19,9 +19,9 @@ function Header({ onAddButtonClick, weatherData }) {
 
       <div className="header__user-container">
         <button
+          className="header__add-clothes-button"
           onClick={onAddButtonClick}
           type="button"
-          className="header__add-clothes-button"
         >
           +Add clothes
         </button>
